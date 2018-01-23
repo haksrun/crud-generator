@@ -1,0 +1,44 @@
+{
+    "name": "Haksrun/crud-generator",
+    "license": "MIT",
+    "description": "Laravel CRUD Generator",
+    "keywords": [
+        "laravel",
+        "crud",
+        "crud generator",
+        "laravel crud generator",
+        "api generator"
+    ],
+    "authors": [
+        {
+            "name": "Haksrun",
+            "email": "kheamhaksrun@gmail.com",
+            "homepage": "http://www.Haksrun.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "^5.1",
+        "laravelcollective/html": "^5.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9.6",
+        "phpunit/phpunit": "^5.7",
+        "orchestra/testbench": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Haksrun\\CrudGenerator\\": "src/"
+        },
+        "classmap": [
+            "tests"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Haksrun\\CrudGenerator\\CrudGeneratorServiceProvider"
+            ]
+        }
+    }
+}
